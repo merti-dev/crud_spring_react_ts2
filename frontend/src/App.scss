@@ -1,0 +1,30 @@
+$primary-color: #007acc;
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 2rem;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    background: $primary-color;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+}
