@@ -1,1 +1,80 @@
-/backend/application.properties
+# Spring Boot build klasörü
+backend/target/
+
+# Maven wrapper ve IDE dosyaları
+backend/.mvn/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.idea/
+backend/.vscode/
+
+# Log dosyaları
+*.log
+
+# Ortam konfigürasyonu (gizli bilgiler varsa)
+*.env
+
+# ─── GLOBAL ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+*.env
+.env.local
+.env.*.local
+*.bak
+
+# ─── NODE / FRONTEND ─────────────────────────────────────
+/node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.next/
+frontend/.parcel-cache/
+frontend/yarn.lock
+frontend/package-lock.json
+
+# Optional IDE configs
+frontend/.idea/
+frontend/.vscode/
+
+# ─── JAVA / BACKEND ──────────────────────────────────────
+backend/target/
+backend/.mvn/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/mvnw
+backend/mvnw.cmd
+
+# Optional IDE configs
+backend/.idea/
+backend/.vscode/
+
+# ─── DOCKER / COMPOSE ────────────────────────────────────
+**/Dockerfile
+docker-compose.override.yml
+*.pid
+
+# ─── LOGS / TEMP ─────────────────────────────────────────
+logs/
+*.log
+tmp/
+*.tmp
+
+# ─── SYSTEM / OS ─────────────────────────────────────────
+*.swp
+*.swo
+*.swn
+*.tmp
+ehthumbs.db
+Desktop.ini
+
+# ─── TEST COVERAGE ───────────────────────────────────────
+coverage/
+*.lcov
+
+# ─── ENV FILES (Sensitive Info) ─────────────────────────
+frontend/.env
+backend/src/main/resources/application-dev.properties
+backend/src/main/resources/application-prod.properties
